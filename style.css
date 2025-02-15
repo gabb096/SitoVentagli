@@ -30,39 +30,52 @@ body {
 .fadeout{
     opacity: 0;
 }
-/* For the slide show */
-.slideShow{
+/* For the slide show, portrait orientation */
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw; 
+    /* gap: 10px; */
+    /* padding: 10px; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
+
+.votes, .fanfuct, .photo {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #666;
+    justify-content: center;
+    font-size: 24px;
 }
-.title{
-    background-color: #f55;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2em;
-    width: 100vw;
-    font-size: 1em;
-    text-align: center;
-    text-justify: initial;
-}
+
 .votes{
-    background-color: #5f5;
-    height: 50vh;
-    width: 30vw;
+    border: 5px solid #5f5;
+    grid-area: a;
 }
-.story{
-    background-color: #55f;
-    height: 50vh;
-    width: 30vw;
+.fanfuct{
+    border: 5px solid #55f;
+    grid-area: b;
 }
 .photo{
-    background-color: #888;
-    height: 100vh;
-    width: 70vw;
+    border: 5px solid #888;
+    grid-area: c;
+}
+
+@media (orientation: landscape) {
+    .container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "a c"
+        "b c";
+      }
+    
+      .photo {
+        grid-row: 1 / 3;
+      }
+    
 }
