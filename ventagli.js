@@ -294,7 +294,7 @@ let allVentagli = [
         "fanFuct" : "Questo ventaglio è entrato in mio possesso tramite la nobile e antica arte del furto.Eravamo nella pittoresca  Reggia di Caserta, lui era abbandonato sopra ad un elegante davanzale, che fai lo lasci lì da solo?"
     },
     {
-        "location": "MAD COW",
+        "location": "CIAMPINO (RM)",
         "year"  : "Tra il 2015 e il 2019",
         "path"  : "img/1-madcow.png",
         "votes" : [2, 2, 1, 1],
