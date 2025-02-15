@@ -10,6 +10,16 @@ document.addEventListener("keydown", function(event) {
     onPrevClick();
   }
 });
+document.addEventListener("click", function(event) {
+
+  if(event.target.tagName === "BUTTON")
+    return;
+  let th = document.body.clientWidth>document.body.clientHeight;
+  if(event.clientX > (document.body.clientWidth * (th ? 0.8 : 0.6)))
+    onNextClick();
+  else if(event.clientX < (document.body.clientWidth * (th ? 0.2 : 0.4)))
+    onPrevClick();
+});
 
 function showVentaglio(ii){
   // change photo
@@ -49,7 +59,6 @@ function onPrevClick(){
   if(index<0){
     index=0;
   }
-  console.log(index);
   showVentaglio(index);
 }
 
