@@ -15,12 +15,18 @@ body {
     font-style: italic;
     height: 100vh;
     width: 100vw;
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: clamp(16px, 3vw, 4em); 
     color: rgb(247, 238, 73);
     opacity: 1;
     transition: opacity 0.8s ease-in-out;
 }
 .startBtnStyle{
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
     height: clamp(20px, 3vw, 100px);
     font-size: clamp(5px, 1vw, 25px); 
     text-align: center;
@@ -35,47 +41,70 @@ body {
     display: grid;
     height: 100vh;
     width: 100vw; 
-    /* gap: 10px; */
-    /* padding: 10px; */
+    padding-left: 10px;
+    padding-right: 10px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-rows: 2fr 2fr 8fr 1fr;
     grid-template-areas: 
     "a"
     "b"
-    "c";
+    "c"
+    "d";
+    font-family: "Playwrite NG Modern", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-
-.votes, .fanfuct, .photo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
+.votes, .fanfuct{
+    text-align: left;
+    color: white;
 }
-
 .votes{
-    border: 5px solid #5f5;
+    /* border: 5px solid #5f5; */
     grid-area: a;
 }
 .fanfuct{
-    border: 5px solid #55f;
+    /* border: 5px solid #55f; */
+    border-top: 5px, solid, red;   
     grid-area: b;
 }
 .photo{
-    border: 5px solid #888;
+    /* border: 5px solid #888; */
     grid-area: c;
+    background-image: url("img/1-madcow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
 @media (orientation: landscape) {
     .container {
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 47% 47% 6%;
         grid-template-areas: 
         "a c"
-        "b c";
+        "b c"
+        "d d";
       }
-    
       .photo {
         grid-row: 1 / 3;
       }
-    
+}
+/* buttons for navigation */
+.navigator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 5px solid aquamarine; */
+    grid-area: d;
+}
+.prevBtnStyle, .nextBtnStyle{
+    height: inherit;
+    width: clamp( 50px, 5vw, 100px);
+    cursor: pointer;
+}
+.selector{
+    height: inherit;
+    width: 20vw;
+    background-color: fuchsia;
 }
