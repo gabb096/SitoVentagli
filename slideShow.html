@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Ventagli meravigliosi</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div id="slideShow" class="container">
         <div id="ss_div_votes" class="votes">
-
+            <h2 id="location">CIAMPINO (RM)</h2>
+            <h3 id="year" style="text-align: right;">Tra il 2015 e il 2019</h3>
+            <h4 id="votes">Qualità : 🪭 🪭 <br> Ventosità : 💨 💨<br> Esteticà : ✨<br>Trashità : 💖<br></h4>
         </div>
         <div id="ss_div_story" class="fanfuct">
-
+            <h3 id="fanfuct" style="text-align: center;">🪭 FAN FUCT</h3><br>
+            <h4 id="story">Questo ventaglio lo usavo a lavoro davanti la griglia del ristorante Mad Cow durante le caldi estati Ciampinesi, li regalavano ai clienti e io ne ho usati / rotti a decine. Questo è l’unico che mi è rimasto.
+            </h4>
         </div>
-        <div id="ss_div_photo" class="photo">
-            
+        <div id="ss_div_photo" class="photo"></div>
+        <div id="ss_navigators" class="navigator">
+            <button id="prevBtn" class="prevBtnStyle" onclick="onPrevClick()"> prev </button>
+            <div id="selector" class="selector"></div>
+            <button id="nextBtn" class="nextBtnStyle" onclick="onNextClick()"> next </button>
         </div>        
     </div>
+    
+    <script src="ventagli.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
