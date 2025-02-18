@@ -65,21 +65,21 @@ let allVentagli = [
     {
         "location": "Murgia (SPA)",
         "year"  : "2024",
-        "path"  : "img/34-murciaLudo_3.png",
+        "path"  : "img/34-murciaLudo.png",
         "votes" : [1, 1, 3, 3],
         "fanFuct": "Sicuro in spagna stanno più in forma di me che per hobby colleziono ventagli e passo serate ad aggiornare sto sito..."
     },   
     {
         "location": "Murgia (SPA)",
         "year"  : "2024",
-        "path"  : "img/33-murciaLudo_2.png",
+        "path"  : "img/33-murciaLudo.png",
         "votes" : [1, 1, 3, 3],
         "fanFuct": "Ma poi bellissimo che hai robe completamente sconnesse tra loro sullo stesso volantino"
     },   
     {
         "location": "Murgia (SPA)",
         "year"  : "2024",
-        "path"  : "img/32-murciaLudo_1.png",
+        "path"  : "img/32-murciaLudo.png",
         "votes" : [1, 1, 3, 3],
         "fanFuct": "Sei in un paese caldo e devi fare pubblicità? Facile, ventagli-volantino! Il paradiso esiste e chi ci abita sa come fare marketing"
     },   
