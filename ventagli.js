@@ -1,11 +1,24 @@
 // ====================
-//
 // aggiungi i nuovi ventagli qui all'inizio dell'array, in fondo al file c'è l'operazione 
 // allVentagli.reverse();
 // che li riordina in ordine cronologico di aggiunta 
 // ====================
 
 let allVentagli = [      
+    {
+        "location": "PESCHIERA DEL GARDA (VR)",
+        "year"  : "2025",
+        "path"  : "img/44-peschieraAndreea.png",
+        "votes" : [3, 3, 4, 3],
+        "fanFuct": "Fa ridere come il ventaglio di prima sia stato comprato a circa 450 km da questo, ma condividano lo stesso luogo di origine"
+    },  
+    {
+        "location": "MAGLIANO SABINA (RI)",
+        "year"  : "2025",
+        "path"  : "img/43-autogrillGarda.png",
+        "votes" : [3, 2, 4, 4],
+        "fanFuct": "Sei in viaggio verso Bologna per un concerto, ti fermi alla stazione di Flaminia Est, trovi dei ventagli tipici della zona, te ne privi?"
+    },  
     {
         "location": "FIRENZE",
         "year"  : "2025",
