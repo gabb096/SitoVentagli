@@ -4,7 +4,14 @@
 // che li riordina in ordine cronologico di aggiunta 
 // ====================
 
-let allVentagli = [      
+let allVentagli = [   
+    {
+        "location": "MONTE CASSINO",
+        "year"  : "2025",
+        "path"  : "img/45-MontecassinoGenitori.png",
+        "votes" : [3, 2, 2, 3],
+        "fanFuct": "È noto che i frati si dilettino nella creazione di prodotti di vario tipo per generare proventi, ma non sapevo costruissero anche ventagli "
+    },     
     {
         "location": "PESCHIERA DEL GARDA (VR)",
         "year"  : "2025",
