@@ -2,15 +2,22 @@
 // aggiungi i nuovi ventagli qui all'inizio dell'array, in fondo al file c'è l'operazione 
 // allVentagli.reverse();
 // che li riordina in ordine cronologico di aggiunta 
+// le statistiche sono : Qualità, Ventosità, Esteticà. Trashità
 // ====================
 
 let allVentagli = [   
     {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/46-AperolTommasoAngelica.png",
+        "votes" : [4, 4, 4, 3],
+        "fanFuct": "Regalino di Tommy e Lange, sarà lo sponsor ufficiale dell'estate 2025"
+    },      {
         "location": "MONTE CASSINO",
         "year"  : "2025",
         "path"  : "img/45-MontecassinoGenitori.png",
         "votes" : [3, 2, 2, 3],
-        "fanFuct": "È noto che i frati si dilettino nella creazione di prodotti di vario tipo per generare proventi, ma non sapevo costruissero anche ventagli "
+        "fanFuct": "È noto che i frati si dilettino nella creazione di prodotti di vario tipo per generare proventi, ma non sapevo costruissero anche ventagli"
     },     
     {
         "location": "PESCHIERA DEL GARDA (VR)",
