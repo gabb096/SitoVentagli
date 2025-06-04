@@ -2,17 +2,39 @@
 // aggiungi i nuovi ventagli qui all'inizio dell'array, in fondo al file c'è l'operazione 
 // allVentagli.reverse();
 // che li riordina in ordine cronologico di aggiunta 
-// le statistiche sono : Qualità, Ventosità, Esteticà. Trashità
+// le statistiche sono : Qualità, Ventosità, Esteticà, Trashità.
 // ====================
 
 let allVentagli = [   
     {
         "location": "ROMA",
         "year"  : "2025",
+        "path"  : "img/49-fruttaClaudia.png",
+        "votes" : [4, 4, 4, 3],
+        "fanFuct": "O raga PODIO p**** d**! qualcuno sa che vuol dire"
+    },
+    {
+        "location": "RAVENNA",
+        "year"  : "2025",
+        "path"  : "img/48-mirabilandiaAndreea.png",
+        "votes" : [3, 4, 4, 4],
+        "fanFuct": "Ormai se c'è una certezza nella vita è che ovunque andrà, Andreea porterà indietro un'indimenticabile ventaglio con se"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/47-mareGenitori.png",
+        "votes" : [4, 4, 3, 2],
+        "fanFuct": "Lista della spesa: latte, uova, ventaglio per gabriele, pane, fazzoletti"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
         "path"  : "img/46-AperolTommasoAngelica.png",
         "votes" : [4, 4, 4, 3],
         "fanFuct": "Regalino di Tommy e Lange, sarà lo sponsor ufficiale dell'estate 2025"
-    },      {
+    },
+    {
         "location": "MONTE CASSINO",
         "year"  : "2025",
         "path"  : "img/45-MontecassinoGenitori.png",
