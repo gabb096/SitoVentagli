@@ -9,6 +9,55 @@ let allVentagli = [
     {
         "location": "ROMA",
         "year"  : "2025",
+        "path"  : "img/56-legacyCasilinoSkyPark.png",
+        "votes" : [1, 1, 3, 3],
+        "fanFuct": "Ma non ce l'hai già questo della legacy? No, torna indietro al numero 21 e vedrai che sono diversi"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/55-TeatroIndia.png",
+        "votes" : [1, 1, 2, 2],
+        "fanFuct": "Da murgia a roma è un'attimo, mi sembrava strano di non averne ancora visti qua"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/54-RegioneLazioClaudia.png",
+        "votes" : [3, 4, 3, 4],
+        "fanFuct": "Raga bella x noi. Ma poi notare come sul puntino della i c'è il disegnino della regione lazio, so chicche che non ti aspetti queste"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/53-NGRomeAndreea.png",
+        "votes" : [2, 2, 2, 3],
+        "fanFuct": "Sempre Andreea poi, e io che come un imbecille le dico 'ma si dai prendilo', e manco faccio front end o siti..."
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/52-LimeAndreea.png",
+        "votes" : [2, 3, 2, 2],
+        "fanFuct": "Lime se leggete sta cosa mi fate uno sconto per la prossima corsa in monopattino? pls grz"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/51-CataniaMartino.png",
+        "votes" : [4, 4, 4, 2],
+        "fanFuct": "Lo ammetto mi sono rotto il cazzo di scrivere queste didascalie... la cosa ci sta sfuggendo di mano, aiuto. Però questo è bello fracico"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/50-romaGenitori.png",
+        "votes" : [3, 4, 4, 4],
+        "fanFuct": "50 ventagli...un traguardo incredibile incoronato dalla meraviglia dei monumenti romani. H501 sempre!"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
         "path"  : "img/49-fruttaClaudia.png",
         "votes" : [4, 4, 4, 3],
         "fanFuct": "O raga PODIO p**** d**! qualcuno sa che vuol dire"
@@ -199,7 +248,7 @@ let allVentagli = [
         "location": "ROMA",
         "year"  : "2024",
         "path"  : "img/22-japaneseGiorgia.png",
-        "votes" : [1, 1, 3, 3],
+        "votes" : [1, 3, 3, 3],
         "fanFuct": "La tua bassista vuole diventare una tatuatrice e alla Legacy Tattoo Accademy dove studia regalano questi vestaglietta in plastica agli studenti. Non puoi privartene."
     },    
     {
