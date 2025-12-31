@@ -9,6 +9,48 @@ let allVentagli = [
     {
         "location": "ROMA",
         "year"  : "2025",
+        "path"  : "img/62-romaFederico.png",
+        "votes" : [2, 3, 3, 4],
+        "fanFuct": "Questo addirittura per il compleanno mi è stato donato"
+    },  
+    {
+        "location": "FIRENZE",
+        "year"  : "2025",
+        "path"  : "img/61-firenzeTommasoAnge.png",
+        "votes" : [2, 3, 3, 3],
+        "fanFuct": "Gli amici fiorentini vanno ad un matrimonio e trovano questo, se lo porteranno a casa? No, lo portano a me muahah"
+    },  
+    {
+        "location": "VIENNA (AT)",
+        "year"  : "2025",
+        "path"  : "img/60-viennaRocky4.png",
+        "votes" : [3, 3, 4, 4],
+        "fanFuct": "Sempre dai coniugi Rocky 4, qui mi viziano"
+    },  
+    {
+        "location": "SANTORINI (GR)",
+        "year"  : "2025",
+        "path"  : "img/59-santoriniRocky4.png",
+        "votes" : [3, 3, 5, 3],
+        "fanFuct": "Al pub il punto ormai lo sanno che ho questa collezione, e chiunque vede un ventaglio ormai mi pensa, questo viene dai coniugi Rocky 4 in vacanza"
+    },    
+    {
+        "location": "LECCE",
+        "year"  : "2025",
+        "path"  : "img/58-notteTaranta.png",
+        "votes" : [1, 1, 4, 4],
+        "fanFuct": "Treno per Melpignano, notte della taranta, ha visto giorni migliori, come il sottoscritto quella notte, chi c'era sa"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
+        "path"  : "img/57-venturo.png",
+        "votes" : [2, 2, 3, 2],
+        "fanFuct": "Aperitivo pre cinema, il locale regala ventagli se prendi uno dei nuovi cocktail con il venturo, te ne privi?"
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2025",
         "path"  : "img/56-legacyCasilinoSkyPark.png",
         "votes" : [1, 1, 3, 3],
         "fanFuct": "Ma non ce l'hai già questo della legacy? No, torna indietro al numero 21 e vedrai che sono diversi"
@@ -389,7 +431,7 @@ let allVentagli = [
         "year"  : "2019",
         "path"  : "img/2-caserta.png",
         "votes" : [3, 2, 4, 4],
-        "fanFuct" : "Questo ventaglio è entrato in mio possesso tramite la nobile e antica arte del furto.Eravamo nella pittoresca  Reggia di Caserta, lui era abbandonato sopra ad un elegante davanzale, che fai lo lasci lì da solo?"
+        "fanFuct" : "Questo ventaglio è entrato in mio possesso tramite la nobile e antica arte del furto.Eravamo nella pittoresca Reggia di Caserta, lui era abbandonato sopra ad un elegante davanzale, che fai lo lasci lì da solo?"
     },
     {
         "location": "CIAMPINO (RM)",
