@@ -7,6 +7,62 @@
 
 let allVentagli = [   
     {
+        "location": "BANGKOK (THA)",
+        "year"  : "2026",
+        "path"  : "img/69-BangkokMartino.png",
+        "votes" : [5, 5, 5, 1],
+        "fanFuct": "Questo è il secondo ventaglio che mi ha portato Martino e il secondo che arriva da Bangkok, il numero 2 è ricorrente in questo qua tranne che nei voti."
+    },
+    {
+        "location": "LONDRA (UK)",
+        "year"  : "2026",
+        "path"  : "img/68-LondraRetro.png",
+        "votes" : [5, 4, 5, 2],
+        "fanFuct": "Questo è il retro."
+    },
+    {
+        "location": "LONDRA (UK)",
+        "year"  : "2026",
+        "path"  : "img/68-LondraFronte.png",
+        "votes" : [5, 4, 5, 2],
+        "fanFuct": "Questo ventaglio l'ho preso a Camden Town, nel negozio che a mani basse è il più figo della zona."
+    },
+    {
+        "location": "TALLIN (EST)",
+        "year"  : "2026",
+        "path"  : "img/67-Tallin.png",
+        "votes" : [2, 3, 4, 5],
+        "fanFuct": "Questo è probabilmente l'unico ventaglio di tutta l'Estonia, è stato difficile trovarne uno ma appena l'ho visto non me lo sono fatto scappare."
+    },
+    {
+        "location": "VALENCIA (SPA)",
+        "year"  : "2026",
+        "path"  : "img/66-ValenciaRocky4.png",
+        "votes" : [4, 4, 5, 3],
+        "fanFuct": "Questo viene dal viaggio dei coniugi Rocky4 a Valencia, non capisco se me li portano perché mi vogliono bene o mi usano per ricordarsi dove sono andati in vacanza."
+    },
+    {
+        "location": "BOLOGNA",
+        "year"  : "2026",
+        "path"  : "img/65-BolognaRomina.png",
+        "votes" : [4, 4, 5, 3],
+        "fanFuct": "Questo"
+    },  
+    {
+        "location": "ROMA",
+        "year"  : "2026",
+        "path"  : "img/64-muchaClaudia.png",
+        "votes" : [4, 4, 5, 3],
+        "fanFuct": "Questo decisamente non mi aspettavo di riceverlo alla fine della mostra di Mucha, come per le sue opere è stato amore a prima vista."
+    },  
+    {
+        "location": "GIAPPONE",
+        "year"  : "2025",
+        "path"  : "img/63-giapponeMariong.png",
+        "votes" : [4, 3, 5, 3],
+        "fanFuct": "Questo al momento è il ventaglio che ha fatto più strada per arrivare da me."
+    },  
+    {
         "location": "ROMA",
         "year"  : "2025",
         "path"  : "img/62-romaFederico.png",
