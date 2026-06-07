@@ -74,28 +74,24 @@ let allVentagli = [
         "year"  : "2025",
         "path"  : "img/61-firenzeTommasoAnge.png",
         "votes" : [2, 3, 3, 3],
-        "fanFuct": "Gli amici fiorentini vanno ad un matrimonio e trovano questo, se lo porteranno a casa? No, lo portano a me muahah"
     },  
     {
         "location": "VIENNA (AT)",
         "year"  : "2025",
         "path"  : "img/60-viennaRocky4.png",
         "votes" : [3, 3, 4, 4],
-        "fanFuct": "Sempre dai coniugi Rocky 4, qui mi viziano"
     },  
     {
         "location": "SANTORINI (GR)",
         "year"  : "2025",
         "path"  : "img/59-santoriniRocky4.png",
         "votes" : [3, 3, 5, 3],
-        "fanFuct": "Al pub il punto ormai lo sanno che ho questa collezione, e chiunque vede un ventaglio ormai mi pensa, questo viene dai coniugi Rocky 4 in vacanza"
     },    
     {
         "location": "LECCE",
         "year"  : "2025",
         "path"  : "img/58-notteTaranta.png",
         "votes" : [1, 1, 4, 4],
-        "fanFuct": "Treno per Melpignano, notte della taranta, ha visto giorni migliori, come il sottoscritto quella notte, chi c'era sa"
     },
     {
         "location": "ROMA",
