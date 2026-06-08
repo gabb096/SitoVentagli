@@ -73,3 +73,17 @@ function onStartSlideShowClick(){
       showVentaglio(index);
     }, 1000);
 }
+
+function showLandingPhrase(){
+  const actionEl = document.getElementById("phraseAction");
+  const meaningEl = document.getElementById("phraseMeaning");
+  if (!actionEl || !meaningEl || !Array.isArray(frasiVentagli) || frasiVentagli.length === 0) return;
+
+  const phrase = frasiVentagli[Math.floor(Math.random() * frasiVentagli.length)];
+  actionEl.textContent = `Come dire "${phrase.Meaning}" :`;
+  meaningEl.textContent = phrase.Action;
+}
+
+if (document.getElementById("phraseAction")) {
+  showLandingPhrase();
+}

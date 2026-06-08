@@ -494,3 +494,30 @@ let allVentagli = [
     }
 ];
 allVentagli.reverse();
+
+let frasiVentagli = [
+    { "Action": "Portandolo con la mano destra di fronte al viso", "Meaning": "Seguimi" },
+    { "Action": "Portandolo con la mano sinistra davanti al viso", "Meaning": "Voglio fare conoscenza" },
+    { "Action": "Posizionando sull'orecchio destro", "Meaning": "Sei cambiato" },
+    { "Action": "Roteandolo nella mano sinistra", "Meaning": "Voglio sbarazzarmi di te" },
+    { "Action": "Roteandolo nella mano destra", "Meaning": "Amo qualcun'altro" },
+    { "Action": "Disegnando sulla fronte", "Meaning": "Siamo osservati" },
+    { "Action": "Portandolo nella mano destra", "Meaning": "Sei troppo disponibile" },
+    { "Action": "Chiudendolo", "Meaning": "Vorrei parlare con te" },
+    { "Action": "Disegnando sugli occhi", "Meaning": "Mi dispiace" },
+    { "Action": "Appoggiandolo sulla guancia destra", "Meaning": "Sì" },
+    { "Action": "Appoggiandolo sulla guancia sinistra", "Meaning": "No" },
+    { "Action": "Aprendolo e inclinandolo", "Meaning": "Sei crudele" },
+    { "Action": "Lasciandolo cadere", "Meaning": "Saremo amici" },
+    { "Action": "Sventolando lentamente", "Meaning": "Sono sposata" },
+    { "Action": "Sventolando rapidamente", "Meaning": "Sono fidanzata" },
+    { "Action": "Mettendo il manico sulle labbra", "Meaning": "Baciami" },
+    { "Action": "Disegnando attraverso la mano", "Meaning": "Ti odio" },
+    { "Action": "Disegnando sulla guancia", "Meaning": "Ti amo" },
+    { "Action": "Usandolo come un ventaglio", "Meaning": "Introducimi alla tua compagnia" },
+    { "Action": "Piegandolo con cura", "Meaning": "Sbarazzati della tua compagnia" },
+    { "Action": "Lisciandolo delicatamente", "Meaning": "Vorrei essere con te" },
+    { "Action": "Mettendolo sulla mano sinistra con il pollice nudo esposto", "Meaning": "Mi ami?" },
+    { "Action": "Tenendolo con la mano destra con delicatezza", "Meaning": "Sii felice" },
+    { "Action": "Disegnando a metà sulla mano sinistra", "Meaning": "Indifferenza" }
+];

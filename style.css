@@ -54,6 +54,24 @@ body {
     filter: brightness(1.05);
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
 }
+.landingPhrase {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    max-width: 680px;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+.landingPhrase p {
+    margin: 0;
+    color: #f7ee49;
+    font-family: inherit;
+    font-size: clamp(2rem, 4vw, 5.5rem);
+    line-height: 1.05;
+}
+.landingPhrase .phraseMeaning {
+    font-weight: 700;
+}
 .fadeout{
     opacity: 0;
 }
