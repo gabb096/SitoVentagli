@@ -7,6 +7,34 @@
 
 let allVentagli = [   
     {
+        "location": "PORTO TORRES (SS)",
+        "year"  : "2026",
+        "path"  : "img/73-PortoTorresMario.png",
+        "votes" : [4, 3, 4, 4],
+        "fanFuct": "Questo invece è stato il regalo del buon Mario che non potrò mai ringraziare abbastanza per questa esperienza in Sardegna, ma soprattutto pee avermi fatto tuffare dalla rocca manna"
+    },
+    {
+        "location": "PORTO FERRO (SS)",
+        "year"  : "2026",
+        "path"  : "img/72-PortoTorresGabriele.png",
+        "votes" : [3, 2, 4, 3],
+        "fanFuct": "Questo ha coronato una giornata incredibile alla scoperta di grotte, spiaggie e scogliere dalla vista mozzafiato. Non si poteva chiedere una guida migliore del buon Gabriele"
+    },
+    {
+        "location": "PORTO TORRES (SS)",
+        "year"  : "2026",
+        "path"  : "img/71-PortoTorresGiusy.png",
+        "votes" : [2, 2, 2, 1],
+        "fanFuct": "Questo mi è stato regalato a forza da Giusy che già prima che arrivassi a PT sapeva che collezionavo ventagli, l'ha estorto ad un povero ragazzo che lavorava in sala, se ve lo state chiedendo no no eravamo alla Pizzeria La Stella"
+    },
+    {
+        "location": "LIDO DI CAMAIORE (LU)",
+        "year"  : "2026",
+        "path"  : "img/70-CamaioreOggi.png",
+        "votes" : [2, 3, 3, 4],
+        "fanFuct": "Questo l'ho preso solo perché mentre facevamo la spesa c'era lui lì da solo, e non potevo lasciarlo lì da solo, non potevo"
+    },
+    {
         "location": "BANGKOK (THA)",
         "year"  : "2026",
         "path"  : "img/69-BangkokMartino.png",
@@ -46,7 +74,7 @@ let allVentagli = [
         "year"  : "2026",
         "path"  : "img/65-BolognaRomina.png",
         "votes" : [4, 4, 5, 3],
-        "fanFuct": "Questo"
+        "fanFuct": "Questo ventaglio l'ho ricevuto a sorpresa da un'amica di arrampicata, non c'è scritto ma grida forte ALÉ!!"
     },  
     {
         "location": "ROMA",
@@ -402,7 +430,7 @@ let allVentagli = [
         "location": "Bangkok (THA)",
         "year"  : "2023",
         "path"  : "img/14-thailandiaAndreea.png",
-        "votes" : [3, 3, 4, 4],
+        "votes" : [4, 3, 4, 4],
         "fanFuct": "Questo è un souvenir da parte di Andreea F. Miroslav che ha viaggiato fino alla Tailandia per recuperare questa meraviglia.È stato preso nel lussuoso centro commerciale “Terminal 21”, il quale ha dedicato ogni piano ad una nazione diversa del mondo."
     },
     {
