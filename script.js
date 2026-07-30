@@ -151,8 +151,14 @@ function setupSlider() {
     sliderThumb.setPointerCapture(event.pointerId);
   });
 
-  sliderTrack.addEventListener("pointerup", function() {
-    sliderThumb.releasePointerCapture?.();
+  sliderTrack.addEventListener("pointerup", function(event) {
+    if (event && typeof event.pointerId !== 'undefined') {
+      try {
+        sliderThumb.releasePointerCapture(event.pointerId);
+      } catch (e) {
+        // ignore if no capture was active
+      }
+    }
   });
 }
 

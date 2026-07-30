@@ -126,7 +126,9 @@ body {
     border-right: 0px;
     border-top: 0px;
     border-bottom: 2px solid var(--text);
-    min-height: 50dvh;
+    max-height: 50dvh;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 .photo{
     /* border: 5px solid #888; */
@@ -137,6 +139,70 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: 50dvh;
+}
+
+@media (orientation: portrait) {
+    .container {
+        /* Top: photo + slider occupy half the viewport height */
+        grid-template-columns: 1fr;
+        grid-template-rows: 50dvh auto auto 1fr;
+        grid-template-areas:
+            "c"
+            "d"
+            "a"
+            "b";
+        position: relative;
+    }
+
+    .photo {
+        grid-area: c;
+        min-height: 50dvh;
+        height: 50dvh;
+        background-size: contain;
+    }
+
+    .navigator {
+        grid-area: d;
+        margin-top: 0;
+    }
+
+    .votes {
+        grid-area: a;
+        /* keep space for location/year but move the votes list below the slider */
+        padding-top: 0.15rem; /* reduced space to bring votes closer to slider */
+    }
+
+    .fanfuct {
+        grid-area: b;
+        max-height: none;
+        border-bottom: none; /* remove separator line in portrait */
+    }
+
+    /* keep location and year visually in the same place: absolute over the photo area */
+    #location {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        z-index: 6;
+        margin: 0;
+    }
+
+    #year {
+        position: absolute;
+        /* place year below location in portrait and align to the right edge */
+        top: calc(1rem + 2.6rem);
+        right: 1rem;
+        left: auto;
+        z-index: 6;
+        margin: 0;
+        text-align: right;
+    }
+
+    /* make votes list and fanfuct scroll if needed */
+    .votes h4#votes, .fanfuct {
+        overflow-y: auto;
+    }
 }
 h1 {
     font-size: 48px; 
@@ -188,7 +254,7 @@ h4 {
     background: var(--btnBg);
     color: var(--text);
     width: min(30px, 10vw);
-    height: min(20px, 7vw);
+    height: min(30px, 10vw);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -238,8 +304,9 @@ h4 {
 
 @media (orientation: landscape) {
     .container {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-        grid-template-rows: minmax(0, 1fr) auto auto;
+                grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+                /* make the first row exactly half the viewport height so the top of .fanfuct starts at 50vh */
+                grid-template-rows: 50vh auto auto;
         grid-template-areas: 
         "a c"
         "b c"
@@ -257,8 +324,11 @@ h4 {
         border-top: 2px solid var(--text);
         border-right: 2px solid var(--text);
         border-bottom: 0px;
-        min-height: 50dvh;
+        min-height: 0;
         height: auto;
+        /* ensure only this box scrolls when content is long */
+        overflow-y: auto;
+        max-height: calc(100vh - 50vh - 1rem);
       }
       .photo {
         grid-row: 1 / 3;
