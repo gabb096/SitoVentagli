@@ -166,7 +166,7 @@ function showLandingPhrase(){
   if (!actionEl || !meaningEl || !Array.isArray(frasiVentagli) || frasiVentagli.length === 0) return;
 
   const phrase = frasiVentagli[Math.floor(Math.random() * frasiVentagli.length)];
-  actionEl.textContent = `Come dire "${phrase.Meaning}" :`;
+  actionEl.textContent = `Come dire ${phrase.Meaning} con un ventaglio:`;
   meaningEl.textContent = phrase.Action;
 }
 

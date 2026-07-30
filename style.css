@@ -1,3 +1,13 @@
+:root {
+    --accent-1: #FFCB47;
+    --accent-2: #885A89;
+    --bgStart:#769FB6;
+    --bgEnd: #9DBBAE;
+    --text: #4A5043;
+    --bodyBG: linear-gradient(var(--bgStart) 0%, var(--bgEnd) 100%);
+    --btnBg: linear-gradient(165deg, var(--accent-1) 35%, var(--accent-2) 100%);;
+}
+
 body {
     margin: 0;
     min-height: 100dvh;
@@ -6,8 +16,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: radial-gradient(circle at top, #50366b 0%, #231428 45%, #111 100%);
-    color: #f7ee49;
+    background: var(--bodyBG);
+    color: var(--text);
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -15,19 +25,20 @@ body {
 .mainTitle {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
-    height: 100vh;
+    gap: 1.5rem;
+    min-height: 100vh;
     width: 100vw;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
     font-family: "Tangerine", serif;
     font-weight: 400;
     font-style: normal;
     font-size: clamp(2rem, 4vw, 5.5rem);
-    color: #f7ee49;
+    color: var(--text);
     opacity: 1;
     transition: opacity 0.8s ease-in-out;
+    position: relative;
 }
 .startBtnStyle{
     display: inline-flex;
@@ -38,16 +49,18 @@ body {
     min-height: 90px;
     padding: 1.2rem 1.8rem;
     border: none;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #f7ee49 0%, #ffb347 100%);
+    border-radius: 24px;
+    background: var(--accent-1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
     font-family: "Tangerine", serif;
     font-weight: 700;
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     line-height: 1.1;
-    color: #222;
+    color: var(--text);
     cursor: pointer;
     transition: transform 0.25s ease, filter 0.25s ease, box-shadow 0.25s ease;
+    margin-top: min(12vh, 7rem);
+    margin-bottom: min(8vh, 4rem);
 }
 .startBtnStyle:hover,
 .startBtnStyle:focus {
@@ -60,18 +73,21 @@ body {
     flex-direction: column;
     gap: 0.4rem;
     max-width: 680px;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: 0 1rem;
+    text-align: center;
 }
 .landingPhrase p {
     margin: 0;
-    color: #f7ee49;
+    color: var(--text);
     font-family: inherit;
     font-size: clamp(2rem, 4vw, 5.5rem);
     line-height: 1.05;
 }
 .landingPhrase .phraseMeaning {
     font-weight: 700;
+    color: var(--accent-1);
+    font-style: italic;
 }
 .fadeout{
     opacity: 0;
@@ -90,14 +106,14 @@ body {
     "b"
     "c"
     "d";
-    font-family: "Playwrite NG Modern", serif;
+    font-family: "Limelight", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 .votes, .fanfuct{
     text-align: left;
-    color: white;
+    color: var(--text);
 }
 .votes{
     /* border: 5px solid #5f5; */
@@ -109,7 +125,8 @@ body {
     grid-area: b;
     border-right: 0px;
     border-top: 0px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--text);
+    min-height: 50dvh;
 }
 .photo{
     /* border: 5px solid #888; */
@@ -167,9 +184,9 @@ h4 {
 }
 
 .navArrow {
-    border: 2px solid #f7ee49;
-    background: linear-gradient(135deg, #f7ee49 0%, #ffb347 100%);
-    color: #222;
+    border: 2px solid var(--accent-1);
+    background: var(--btnBg);
+    color: var(--text);
     width: min(30px, 10vw);
     height: min(20px, 7vw);
     border-radius: 50%;
@@ -194,7 +211,7 @@ h4 {
     width: 100%;
     height: 4px;
     border-radius: 999px;
-    background: rgba(247, 238, 73, 0.35);
+    background: color-mix(in srgb, var(--accent-1) 35%, transparent);
     cursor: pointer;
 }
 .sliderThumb {
@@ -205,9 +222,9 @@ h4 {
     width: 52px;
     height: 26px;
     border-radius: 999px;
-    border: 2px solid #f7ee49;
-    background: linear-gradient(135deg, #f7ee49 0%, #ffb347 100%);
-    color: #222;
+    border: 2px solid var(--accent-1);
+    background: var(--btnBg);
+    color: var(--text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,14 +250,15 @@ h4 {
         padding: 0.45rem 0.6rem calc(0.7rem + env(safe-area-inset-bottom, 0px));
       }
       .votes{
-        border-right: 2px solid white;
+        border-right: 2px solid var(--text);
         min-height: 0;
       }
       .fanfuct{
-        border-top: 2px solid white;
-        border-right: 2px solid white;
+        border-top: 2px solid var(--text);
+        border-right: 2px solid var(--text);
         border-bottom: 0px;
-        min-height: 0;
+        min-height: 50dvh;
+        height: auto;
       }
       .photo {
         grid-row: 1 / 3;
