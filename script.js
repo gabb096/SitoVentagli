@@ -2,36 +2,6 @@ const maxIndex = allVentagli.length-1;
 let index=0;
 const votesStrings = ["Qualità\t:", "Ventosità\t:", "Esteticà\t:", "Trashità\t:"];
 const voteEmoji = ["🪭", "💨", "✨","💖"];
-const swipeThreshold = 60;
-let swipeStartX = null;
-let swipeStartY = null;
-
-function resetSwipeState() {
-  swipeStartX = null;
-  swipeStartY = null;
-}
-
-function handleSwipeStart(clientX, clientY) {
-  swipeStartX = clientX;
-  swipeStartY = clientY;
-}
-
-function handleSwipeEnd(clientX, clientY) {
-  if (swipeStartX === null || swipeStartY === null) return;
-
-  const deltaX = clientX - swipeStartX;
-  const deltaY = clientY - swipeStartY;
-
-  if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > swipeThreshold) {
-    if (deltaX < 0) {
-      onPrevClick();
-    } else {
-      onNextClick();
-    }
-  }
-
-  resetSwipeState();
-}
 
 document.addEventListener("keydown", function(event) {
   if (event.key === "ArrowRight") {
@@ -89,69 +59,45 @@ document.addEventListener("click", function(event) {
     onPrevClick();
 });
 
-if (window.PointerEvent) {
-  document.addEventListener("pointerdown", function(event) {
-    if (event.pointerType === "touch") {
-      handleSwipeStart(event.clientX, event.clientY);
-    }
-  });
-
-  document.addEventListener("pointerup", function(event) {
-    if (event.pointerType === "touch") {
-      handleSwipeEnd(event.clientX, event.clientY);
-    }
-  });
-
-  document.addEventListener("pointercancel", resetSwipeState);
-} else {
-  document.addEventListener("touchstart", function(event) {
-    if (event.touches.length === 1) {
-      handleSwipeStart(event.touches[0].clientX, event.touches[0].clientY);
-    }
-  }, { passive: true });
-
-  document.addEventListener("touchend", function(event) {
-    if (event.changedTouches.length === 1) {
-      handleSwipeEnd(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
-    }
-  }, { passive: true });
-
-  document.addEventListener("touchcancel", resetSwipeState, { passive: true });
-}
-
 function showVentaglio(ii){
-  const photoDiv = document.getElementById("ss_div_photo");
-  const locationEl = document.getElementById("location");
-  const yearEl = document.getElementById("year");
-  const votesEl = document.getElementById("votes");
-  const storyEl = document.getElementById("story");
-
-  if (!photoDiv || !locationEl || !yearEl || !votesEl || !storyEl) {
-    return;
-  }
-
   // change photo
-  photoDiv.style.backgroundImage = "url(" + allVentagli[ii].path +")";
-  photoDiv.style.backgroundSize = "contain";
-  photoDiv.style.backgroundRepeat = "no-repeat";
-  photoDiv.style.backgroundPosition = "center";
+  let div = document.getElementById("ss_div_photo");
+  div.style.backgroundImage = "url(" + allVentagli[ii].path +")";
+  div.style.backgroundSize = "contain";
+  div.style.backgroundRepeat = "no-repeat";
+  div.style.backgroundPosition = "center";
   // change location
-  locationEl.innerHTML = allVentagli[ii].location;
+  document.getElementById("location").innerHTML = allVentagli[ii].location;
   // change year
-  yearEl.innerHTML = allVentagli[ii].year;
+  document.getElementById("year").innerHTML = allVentagli[ii].year;
   // change votes
-  votesEl.innerHTML = "";
+  div = document.getElementById("votes");
+  div.innerHTML = "";
   for(let s=0; s<votesStrings.length; s++){
-    votesEl.innerHTML+= votesStrings[s];
+    div.innerHTML+= votesStrings[s];
     let stop = allVentagli[ii].votes[s];
     for(let v=0; v<stop; v++){
-      votesEl.innerHTML+= " " + voteEmoji[s]
+      div.innerHTML+= " " + voteEmoji[s]
     }
-    votesEl.innerHTML += "<br>"
+    div.innerHTML += "<br>"
   }
   // change story
-  storyEl.innerHTML = allVentagli[ii].fanFuct;
-  updateSlider();
+  document.getElementById("story").innerHTML = allVentagli[ii].fanFuct;
+}
+function onNextClick(){
+  index++;
+  if(index>=maxIndex){
+    index = maxIndex;
+  }
+  console.log(index);
+  showVentaglio(index);
+}
+function onPrevClick(){
+  index--;
+  if(index<0){
+    index=0;
+  }
+  showVentaglio(index);
 }
 
 function onStartSlideShowClick(){
