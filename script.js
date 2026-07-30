@@ -49,7 +49,8 @@ function onPrevClick(){
 }
 
 document.addEventListener("click", function(event) {
-  if (event.target.tagName === "BUTTON") {
+  const target = event.target;
+  if (target.tagName === "BUTTON" || target.closest(".navArrow")) {
     return;
   }
 
@@ -60,6 +61,29 @@ document.addEventListener("click", function(event) {
     onPrevClick();
   }
 });
+
+function attachArrowButtons() {
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  if (prevBtn) {
+    prevBtn.addEventListener("click", function(event) {
+      event.stopPropagation();
+      onPrevClick();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener("click", function(event) {
+      event.stopPropagation();
+      onNextClick();
+    });
+  }
+}
+
+if (document.getElementById("prevBtn") || document.getElementById("nextBtn")) {
+  attachArrowButtons();
+}
 
 function showVentaglio(ii){
   // change photo
