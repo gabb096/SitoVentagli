@@ -49,14 +49,16 @@ function onPrevClick(){
 }
 
 document.addEventListener("click", function(event) {
-
-  if(event.target.tagName === "BUTTON")
+  if (event.target.tagName === "BUTTON") {
     return;
-  let th = document.body.clientWidth>document.body.clientHeight;
-  if(event.clientX > (document.body.clientWidth * (th ? 0.8 : 0.6)))
+  }
+
+  let th = document.body.clientWidth > document.body.clientHeight;
+  if (event.clientX > (document.body.clientWidth * (th ? 0.8 : 0.6))) {
     onNextClick();
-  else if(event.clientX < (document.body.clientWidth * (th ? 0.2 : 0.4)))
+  } else if (event.clientX < (document.body.clientWidth * (th ? 0.2 : 0.4))) {
     onPrevClick();
+  }
 });
 
 function showVentaglio(ii){
@@ -84,22 +86,6 @@ function showVentaglio(ii){
   // change story
   document.getElementById("story").innerHTML = allVentagli[ii].fanFuct;
 }
-function onNextClick(){
-  index++;
-  if(index>=maxIndex){
-    index = maxIndex;
-  }
-  console.log(index);
-  showVentaglio(index);
-}
-function onPrevClick(){
-  index--;
-  if(index<0){
-    index=0;
-  }
-  showVentaglio(index);
-}
-
 function onStartSlideShowClick(){
     // do animation before change page
     let landingPage = document.getElementById("landingPage");
