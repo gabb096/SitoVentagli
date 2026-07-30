@@ -11,21 +11,21 @@ let allVentagli = [
         "year"  : "2026",
         "path"  : "img/73-PortoTorresMario.png",
         "votes" : [4, 3, 4, 4],
-        "fanFuct": "Questo invece è stato il regalo del buon Mario che non potrò mai ringraziare abbastanza per questa esperienza in Sardegna, ma soprattutto pee avermi fatto tuffare dalla rocca manna"
+        "fanFuct": "Questo invece è stato il regalo del buon Mario che non potrò mai ringraziare abbastanza per questa esperienza in Sardegna, e per avermi ufficialmente battezzato alla Rocca Manna, ora ho la cittadinanza di Porto Torres"
     },
     {
         "location": "PORTO FERRO (SS)",
         "year"  : "2026",
         "path"  : "img/72-PortoTorresGabriele.png",
         "votes" : [3, 2, 4, 3],
-        "fanFuct": "Questo ha coronato una giornata incredibile alla scoperta di grotte, spiaggie e scogliere dalla vista mozzafiato. Non si poteva chiedere una guida migliore del buon Gabriele"
+        "fanFuct": "Chistha è la cariasgia su ra tustha. Grotti, ippiaggi e ischogli seccanti (vedi nota). Puru eddu sabìa di ra collezioni mea e vurìa contribuì. No pudiammi dumandà una guida migliori di Gabriele"
     },
     {
         "location": "PORTO TORRES (SS)",
         "year"  : "2026",
         "path"  : "img/71-PortoTorresGiusy.png",
         "votes" : [2, 2, 2, 1],
-        "fanFuct": "Questo mi è stato regalato a forza da Giusy che già prima che arrivassi a PT sapeva che collezionavo ventagli, l'ha estorto ad un povero ragazzo che lavorava in sala, se ve lo state chiedendo no no eravamo alla Pizzeria La Stella"
+        "fanFuct": "Chisthu è un rigaru di Giusy, chi già sabìa chi faziu ra collezione di ventagli. Ni r'ha furaddu ad un povaru pizzinnu ghi era trabagliendi i ru bar. Si vi ru seddi priguntendi: no, no era la Stella"
     },
     {
         "location": "LIDO DI CAMAIORE (LU)",
@@ -81,7 +81,7 @@ let allVentagli = [
         "year"  : "2026",
         "path"  : "img/64-muchaClaudia.png",
         "votes" : [4, 4, 5, 3],
-        "fanFuct": "Questo decisamente non mi aspettavo di riceverlo alla fine della mostra di Mucha, come per le sue opere è stato amore a prima vista."
+        "fanFuct": "Questo mi è stato regalato alla mostra di Mucha, sia per Cloud che per le opere del maestro è stato amore a prima vista."
     },  
     {
         "location": "GIAPPONE",
@@ -130,7 +130,7 @@ let allVentagli = [
         "year"  : "2025",
         "path"  : "img/57-venturo.png",
         "votes" : [2, 2, 3, 2],
-        "fanFuct": "Aperitivo pre cinema, il locale regala ventagli se prendi uno dei nuovi cocktail con il venturo, te ne privi?"
+        "fanFuct": "Aperitivo pre cinema con Dippirini, il locale regala ventagli se prendi uno dei nuovi cocktail con il venturo, te ne privi?"
     },
     {
         "location": "ROMA",
