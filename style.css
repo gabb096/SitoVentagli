@@ -304,9 +304,9 @@ h4 {
 
 @media (orientation: landscape) {
     .container {
-                grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-                /* make the first row exactly half the viewport height so the top of .fanfuct starts at 50vh */
-                grid-template-rows: 50vh auto auto;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+        /* fixed bottom row for the slider: keeps it aligned at the bottom even when fanFuct text grows */
+        grid-template-rows: 50vh minmax(0, 1fr) 56px;
         grid-template-areas: 
         "a c"
         "b c"
@@ -328,7 +328,7 @@ h4 {
         height: auto;
         /* ensure only this box scrolls when content is long */
         overflow-y: auto;
-        max-height: calc(100vh - 50vh - 1rem);
+        max-height: calc(100vh - 50vh - 56px - 1rem);
       }
       .photo {
         grid-row: 1 / 3;
@@ -340,6 +340,8 @@ h4 {
         margin-top: 0;
         padding-top: 0.2rem;
         padding-bottom: 0;
+        height: 56px;
+        align-self: end;
     }
     .sliderControl {
         width: min(280px, 70vw);
