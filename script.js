@@ -11,6 +11,16 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
+function getVentaglioNumberFromPath(path) {
+  if (!path || typeof path !== "string") return null;
+
+  const fileName = path.split("/").pop();
+  if (!fileName) return null;
+
+  const match = fileName.match(/^(\d+)-/);
+  return match ? Number(match[1]) : null;
+}
+
 function updateSlider() {
   const sliderThumb = document.getElementById("sliderThumb");
   const sliderValue = document.getElementById("sliderValue");
@@ -18,12 +28,15 @@ function updateSlider() {
 
   if (!sliderThumb || !sliderValue || !sliderTrack) return;
 
+  const currentVentaglio = allVentagli[index];
+  const currentNumber = getVentaglioNumberFromPath(currentVentaglio?.path);
+
   const maxPosition = Math.max(1, maxIndex);
   const ratio = maxPosition === 0 ? 0 : index / maxPosition;
   const leftPercent = Math.max(0, Math.min(100, ratio * 100));
 
   sliderThumb.style.left = leftPercent + "%";
-  sliderValue.textContent = String(index + 1);
+  sliderValue.textContent = String(currentNumber ?? index + 1);
 }
 
 function goToVentaglio(targetIndex) {
