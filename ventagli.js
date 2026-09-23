@@ -7,6 +7,48 @@
 
 let allVentagli = [   
     {
+        "location": "PORT GHALIB (EG)",
+        "year"  : "2026",
+        "path"  : "img/78-EgittoGiorgio.png",
+        "votes" : [3, 3, 4, 4],
+        "fanFuct": "Questo me l'ha portato sempre il mio fratellone Giorgio e penso che ci arrivate anche voi a capire che viene dalla Lituania, è sempre stato affascinato dall'est europa."
+    },
+    {
+        "location": "MACERATA (MC)",
+        "year"  : "2026",
+        "path"  : "img/77-MacerataGenitoriRetro.png",
+        "votes" : [1, 1, 2, 3],
+        "fanFuct": "Questo è il retro."
+    },
+    {
+        "location": "MACERATA (MC)",
+        "year"  : "2026",
+        "path"  : "img/77-MacerataGenitoriFronte.png",
+        "votes" : [1, 1, 2, 3],
+        "fanFuct": "Questo me l'hanno portato i miei genitori dal concerto che gli abbiamo regalato di Luca Carboni, uno scambio equo direi."
+    },
+    {
+        "location": "ROMA",
+        "year"  : "2026",
+        "path"  : "img/76-RomaAlebionda.png",
+        "votes" : [1, 2, 4, 5],
+        "fanFuct": "Questo l'ho salvato da una cernita di vestiti che Alessia Bionda stava facendo. Curioso trovare un ventaglio del genere nell'armadio di un'abruzzese. È stato riparato alla meglio con del cavo elettrico sottile, forse un giorno faremo di meglio."
+    },
+    {
+        "location": "SOFIA (BUL)",
+        "year"  : "2026",
+        "path"  : "img/75-BulgariaGiorgio.png",
+        "votes" : [3, 2, 4, 4],
+        "fanFuct": "Questo l'ha portato il fratellone dal suo viaggio in Bulgaria, lui dice che tutto ruotava per andare a vedere il Buzludzha ma palesemente era per andare a comprare sto ventaglio, al Buzludzha nemmeno c'è stato..."
+    },
+    {
+        "location": "ALICANTE (SPA)",
+        "year"  : "2026",
+        "path"  : "img/74-AlicanteMadreClaudia.png",
+        "votes" : [4, 3, 4, 3],
+        "fanFuct": "Questo me l'ha regalato la mamma di Claudia, era in vacanza ad alicante e aveva detto "niente souvenir", poi ha visto il ventaglio e ha dovuto prendere i souvenir a tutta la famiglia, prego ragazzi"
+    },
+    {
         "location": "PORTO TORRES (SS)",
         "year"  : "2026",
         "path"  : "img/73-PortoTorresMario.png",
