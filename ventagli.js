@@ -46,7 +46,7 @@ let allVentagli = [
         "year"  : "2026",
         "path"  : "img/74-AlicanteMadreClaudia.png",
         "votes" : [4, 3, 4, 3],
-        "fanFuct": "Questo me l'ha regalato la mamma di Claudia, era in vacanza ad alicante e aveva detto "niente souvenir", poi ha visto il ventaglio e ha dovuto prendere i souvenir a tutta la famiglia, prego ragazzi"
+        "fanFuct": "Questo me l'ha regalato la mamma di Claudia, era in vacanza ad alicante e aveva detto \"niente souvenir\", poi ha visto il ventaglio e ha dovuto prendere i souvenir a tutta la famiglia, prego ragazzi"
     },
     {
         "location": "PORTO TORRES (SS)",
